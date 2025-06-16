@@ -1,0 +1,65 @@
+/* Basisopmaak voor de hele pagina */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+/* Opmaak voor de header en footer */
+header, footer {
+    background: #003366;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* Hoofdgedeelte centreren en opmaken */
+main {
+    max-width: 800px;
+    margin: 2em auto;
+    background: #fff;
+    padding: 2em;
+    border-radius: 8px;
+}
+
+/* Afbeeldingen naast elkaar tonen met ruimte ertussen */
+.afbeeldingen {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+/* Opmaak voor de afbeeldingen zelf */
+.afbeeldingen img {
+    width: 200px;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* ...bestaande code... */
+
+.float-links {
+    float: left;
+    margin: 0 16px 12px 0;
+    border: 2px solid #000;
+    width: 200px;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.float-rechts {
+    float: right;
+    margin: 0 0 12px 16px;
+    border: 2px solid #000;
+    width: 200px;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+article::after {
+    content: "";
+    display: table;
+    clear: both;
+}
